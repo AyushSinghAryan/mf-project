@@ -9,9 +9,9 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Supabase.initialize(
-    url: 'https://tkotrtgvjqtbyszvjygj.supabase.co',
+    url: 'add_your_supabase_url',
     anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRrb3RydGd2anF0YnlzenZqeWdqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDkzNTkzNjUsImV4cCI6MjA2NDkzNTM2NX0.Ixt1P7taOFG74TXuht424qHcsxB2z4zFXdA-di9a_gs',
+        'add_your_anon_supabase_key',
   );
 
   // --- 3. Wrap your App with MultiProvider ---
