@@ -5,7 +5,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 class ApiService {
   // IMPORTANT: Replace with your computer's local IP address
-  static const String _baseUrl = 'http://192.168.31.132:5000';
+  static const String _baseUrl = 'add_your_ip_address';
   final SupabaseClient _supabase;
   ApiService(this._supabase);
 
