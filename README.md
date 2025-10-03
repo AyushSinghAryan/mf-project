@@ -1,4 +1,4 @@
-# flutter_investeeks_app
+# flutter_mutualFund_app
 
 A new Flutter project.
 
