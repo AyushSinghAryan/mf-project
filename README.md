@@ -1,4 +1,4 @@
-# flutter_mutualFund_app
+# mutualFund_app
 
 A new Flutter project.
 
