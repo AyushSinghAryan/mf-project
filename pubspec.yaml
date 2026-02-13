@@ -44,6 +44,8 @@ dependencies:
   google_sign_in: ^6.2.1 # Add this line
   provider: ^6.1.5+1
   webview_flutter: ^4.7.0
+  flutter_stripe: ^10.1.1 
+# To request storage permissions on Android
 
 
 dev_dependencies:

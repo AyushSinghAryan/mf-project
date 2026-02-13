@@ -4,6 +4,7 @@ import 'package:flutter_investeeks_app/screens/dashboard/dashboard_screen.dart';
 import 'package:flutter_investeeks_app/screens/financial_literacy_screen.dart'; // <-- Import the new screen
 import 'package:flutter_investeeks_app/screens/i_trades_screen.dart';
 import 'package:flutter_investeeks_app/screens/mutual_funds_screen.dart';
+import 'package:flutter_investeeks_app/screens/my_orders_screen.dart';
 import 'package:flutter_investeeks_app/screens/my_wishlist_screen.dart';
 import 'package:flutter_investeeks_app/screens/pricing_screen.dart';
 import 'package:flutter_investeeks_app/screens/sip_calculator_screen.dart';
@@ -100,6 +101,16 @@ class AppDrawer extends StatelessWidget {
                 ),
               );
             },
+          ),
+
+          _buildDrawerItem(
+            context: context,
+            icon: Icons.receipt_long_outlined,
+            text: 'My Orders',
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const MyOrdersScreen()),
+            ),
           ),
           _buildDrawerItem(
             context: context,

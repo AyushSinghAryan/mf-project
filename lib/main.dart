@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_investeeks_app/auth_gate.dart';
-import 'package:flutter_investeeks_app/services/api_service.dart'; // <-- 1. Import ApiService
-import 'package:provider/provider.dart'; // <-- 2. Import Provider
+import 'package:flutter_investeeks_app/services/api_service.dart'; //
+import 'package:flutter_stripe/flutter_stripe.dart';
+import 'package:provider/provider.dart'; //
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_investeeks_app/theme/app_theme.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  Stripe.publishableKey =
+      'pk_test_51PjywcGXrV9hQ5aLOxlkKeE85xyViWSrCPRLCInoVZe3gaxQhfIKakThRfFWsCPH028vKiNCQEN5KiN0oXuAChSF00yfBZYlVE';
 
   await Supabase.initialize(
     url: 'add_your_supabase_url',
@@ -14,7 +17,7 @@ Future<void> main() async {
         'add_your_anon_supabase_key',
   );
 
-  // --- 3. Wrap your App with MultiProvider ---
+  // --- . Wrap your App with MultiProvider ---
   runApp(
     MultiProvider(
       providers: [
